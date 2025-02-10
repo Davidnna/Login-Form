@@ -27,7 +27,10 @@ document.getElementById("form").addEventListener("submit", function(event) {
         correctPassword = true;
     }
 
-    if(!correctUsername || !correctPassword) {
+    if (!correctUsername || !correctPassword) {
         event.preventDefault();
+    }
+    else {
+        alert("Login Successfully")
     }
 });
