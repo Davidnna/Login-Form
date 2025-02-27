@@ -3,27 +3,35 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" type="image/jpg" href="favicon.jpeg">
-        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" type="image/jpeg" href="images/login-form.jpeg">
+        <!-- <link rel="icon" type="image/jpg" href="https://i.postimg.cc/Cxf8gj7v/login-form.jpg"> -->
+        <link rel="stylesheet" href="styles/styles.css">
         <title>Login Form</title>
     </head>
     <body>
+        <!-- Header -->
         <header>
             <h1>LOGIN FORM</h1>
         </header>
         <main>
+            <!-- Form -->
             <form id="form">
+                <!-- Username -->
                 <label for="username">Username:</label>
                 <input type="text" id="username" name="username" placeholder="Enter Your Username Here eg. John" required>
                 <small id="usernameError">Invalid Username: Your username should be between 8 and 16 characters(Alphabets Only)</small>
 
+                <!-- Password -->
                 <label for="password">Password:</label>
                 <input type="password" id="password" name="password" placeholder="Enter Your Password Here" required>
                 <small id="passwordError">Invalid Password: Your username should be between 12 and 16 characters(Any character)</small>
 
+                <small id="successful">Login Successful</small>
+                
+                <!-- Submit -->
                 <button type="submit" id="submit">Register with Spotless</button>
             </form>
         </main>
-        <script src="script.js"></script>
+        <script src="scripts/script.js"></script>
     </body>
 </html>
